@@ -14,7 +14,6 @@ class MovieModelSerializer(serializers.ModelSerializer):
             'title',
             'resume',
             'genre',
-            'rate',
             'release_date',
             'actors',
             'created_at',
