@@ -9,16 +9,7 @@ from actors.serializers import ActorSerializer
 class MovieModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = (
-            'id',
-            'title',
-            'resume',
-            'genre',
-            'release_date',
-            'actors',
-            'created_at',
-            'updated_at',
-        )
+        fields = '__all__'
 
     def validate_release_date(self, value):
         year_validate = 1990
